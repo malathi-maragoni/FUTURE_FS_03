@@ -1,6 +1,6 @@
-# ☕ Brew Haven Café Website
+# ☕ The Mala Blend Cafe Website
 
-A modern café website built as part of Future Interns Task 3.
+A modern cafe website built as part of Future Interns Task 3.
 
 ## 🚀 Features
 - Premium UI design
