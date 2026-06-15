@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Mala Blend Cafe</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>The Mala Blend ☕</h1>
+  <p>Craft Coffee • Cozy Space • Good Vibes</p>
+  <p id="status"></p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h2>Fresh Coffee, Delivered to You</h2>
+  <p>Order your favorite drinks instantly</p>
+  <button onclick="openOrderModal()">Order Now</button>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu">
+
+    <div class="card">
+      <h3>Espresso</h3>
+      <p>₹120</p>
+      <button onclick="addToCart('Espresso',120)">Add</button>
+    </div>
+
+    <div class="card">
+      <h3>Cappuccino</h3>
+      <p>₹180</p>
+      <button onclick="addToCart('Cappuccino',180)">Add</button>
+    </div>
+
+    <div class="card">
+      <h3>Mocha</h3>
+      <p>₹200</p>
+      <button onclick="addToCart('Mocha',200)">Add</button>
+    </div>
+
+    <div class="card">
+      <h3>Sandwich</h3>
+      <p>₹150</p>
+      <button onclick="addToCart('Sandwich',150)">Add</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Our Space</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    The Mala Blend is a modern café built for comfort, creativity, and connection.
+    Whether you want to work or chill, we’ve got your vibe covered.
+  </p>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <h2>What Our Customers Say ⭐</h2>
+
+  <div class="reviews">
+
+    <div class="review-card">
+      <p>"Amazing coffee and super cozy place! Perfect for working."</p>
+      <h4>– Anjali ⭐⭐⭐⭐⭐</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"Loved the cappuccino. Friendly staff and great ambiance."</p>
+      <h4>– Rahul ⭐⭐⭐⭐⭐</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"Best café in Sainikpuri! Will visit again."</p>
+      <h4>– Sneha ⭐⭐⭐⭐</h4>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📍 Hyderabad , Secunderabad , Telangana</p>
+  <p>📞 +91 98765 43210</p>
+
+  <!-- Google Map -->
+  <iframe 
+  src="https://maps.google.com/maps?q=Sainikpuri%20Secunderabad%20Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+</section>
+
+<footer>
+  <p>© 2026 The Mala Blend Cafe</p>
+</footer>
+
+<!-- ORDER MODAL -->
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <h2>Your Order</h2>
+    <ul id="cartList"></ul>
+    <h3 id="total"></h3>
+    <button onclick="placeOrder()">Place Order</button>
+    <button onclick="closeModal()">Close</button>
+    <button onclick="orderWhatsApp()" style="background:green;color:white;margin-top:10px;">
+  Order via WhatsApp
+</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
